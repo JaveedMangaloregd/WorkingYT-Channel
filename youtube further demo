@@ -1,0 +1,235 @@
+<!--nested layouts technique 1)vertical layout _ 2)Horizontal layout ||| -->
+<!DOCYPE html>   <!--https://supersimple.dev/exercises/youtube/-->
+
+<html>
+   <head>
+    <title>
+      Youtbe.com Cloneee
+    </title>
+<link>  <!--if width changes than even height changes to keep the dimension same and clear with out stretch but image height can be changed by input height: 300 px but it strech out the image making it unprofessional-->
+    <!--use   object-fit: cover;  when used change in height to make it fit to the clear dimension it crops inside but gives clearity -->  
+   <!--object-fit: containe; can be used to shrink down the image and object position can make it move to top bottowm left and right if needed-->
+   <!--you can even put border to the image with the border-width: border-style: border-color: -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+   <style>
+      p{ 
+        font-family:Roboto,Arial;
+        margin-top: 0;
+        margin-bottom: 0;
+       }
+      .thumbnail {
+        width: 100%;
+        display: block;
+       }
+       .search-bar{
+         font-size: 20px;
+         margin-left: 12px;
+         display: block;
+         
+       }
+       .video-title{
+        margin-top: 0;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+        margin-bottom: 12px;
+       }
+       .video-author,
+       .video-stats{
+        font-size: 12px;
+        color: rgb(96,96,96);
+       }
+       .video-author{
+        margin-bottom: 4px;
+       }
+       .video-preview{
+        width: 300px;
+        display: inline-block;
+        vertical-align: top;
+        margin-right: 15px;
+       }
+       .channel-picture{
+        display: inline-block;
+        width: 40px;
+        vertical-align: top;
+       }
+       .video-info{
+        display: inline-block;
+        width: 200px;
+       }
+       .profile-picture{
+        width: 100%;
+        border-radius: 40px;
+       }
+       .thumbnail-row{
+        margin-bottom: 12px;
+       }
+       .video-info-grid{
+        display: grid;
+        grid-template-columns: 50px 1fr;
+       }
+       .video-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+       }
+    </style>
+    <!--<div>=division is just a box-->
+  </head>
+  <body>
+    <input class="search-bar" type="text" placeholder="search">  <!--type="checkbox" tp tick mark and placeholder labels the search box so that is shows the lable and disappears when you input text in it-->
+    
+    <div class="video-grid">
+    
+    <div class="video-preview">
+
+    <div class="thumbnail-row">
+      <img class="thumbnail" src="thumbnails/thumbnail-1.webp"> <!--inline block element as it takes only space how much it required like the text as text takes whole line with orange box toblock the line-->
+    </div>
+    <div class="video-info-grid">
+      <div class="channel-picture">
+        <img class="profile-picture" src="channelpictures/channel-1.jpeg">
+      </div>
+      <div class="video-info">
+        <p class="video-title">
+      Talking Tech and Ai with Google CEO Sundar Pichai!<!--by default paragraphs are block elements which extends over whole line in page-->
+      </p>
+      <p class="video-author">
+      Marques Browniee    
+      </p>
+      <p class="video-stats">
+      3.4M views &#183; 6 months ago
+      </p>
+      </div>
+    </div>
+    </div>
+
+
+<div class="video-preview">
+
+    <div class="thumbnail-row">
+      <img class="thumbnail" src="thumbnails/thumbnail-2.webp"> <!--inline block element as it takes only space how much it required like the text as text takes whole line with orange box toblock the line-->
+    </div>
+    <div class="video-info-grid">
+      <div class="channel-picture">
+        <img class="profile-picture" src="channelpictures/channel-2.jpeg">
+      </div>
+      <div class="video-info">
+        <p class="video-title">
+      Try Not To Laugh Challenge #9
+    </p>
+    <p class="video-author">
+      Markiplier  
+    </p>
+    <p class="video-stats">
+      19M views &#183; 4 years ago
+    </p>
+      </div>
+    </div>
+    </div>
+
+
+
+
+
+    <div class="video-preview">
+
+      <div class="thumbnail-row">
+        <img class="thumbnail" src="thumbnails/thumbnail-1.webp"> <!--inline block element as it takes only space how much it required like the text as text takes whole line with orange box toblock the line-->
+      </div>
+      <div class="video-info-grid">
+        <div class="channel-picture">
+          <img class="profile-picture" src="channelpictures/channel-1.jpeg">
+        </div>
+        <div class="video-info">
+          <p class="video-title">
+        Talking Tech and Ai with Google CEO Sundar Pichai!<!--by default paragraphs are block elements which extends over whole line in page-->
+        </p>
+        <p class="video-author">
+        Marques Browniee    
+        </p>
+        <p class="video-stats">
+        3.4M views &#183; 6 months ago
+        </p>
+        </div>
+      </div>
+      </div>
+
+
+  <div class="video-preview">
+
+      <div class="thumbnail-row">
+        <img class="thumbnail" src="thumbnails/thumbnail-2.webp"> <!--inline block element as it takes only space how much it required like the text as text takes whole line with orange box toblock the line-->
+      </div>
+      <div class="video-info-grid">
+        <div class="channel-picture">
+          <img class="profile-picture" src="channelpictures/channel-2.jpeg">
+        </div>
+        <div class="video-info">
+          <p class="video-title">
+        Try Not To Laugh Challenge #9
+      </p>
+      <p class="video-author">
+        Markiplier  
+      </p>
+      <p class="video-stats">
+        19M views &#183; 4 years ago
+      </p>
+        </div>
+      </div>
+      </div>
+
+
+
+      <div class="video-preview">
+
+      <div class="thumbnail-row">
+        <img class="thumbnail" src="thumbnails/thumbnail-1.webp"> <!--inline block element as it takes only space how much it required like the text as text takes whole line with orange box toblock the line-->
+      </div>
+      <div class="video-info-grid">
+        <div class="channel-picture">
+          <img class="profile-picture" src="channelpictures/channel-1.jpeg">
+        </div>
+        <div class="video-info">
+          <p class="video-title">
+        Talking Tech and Ai with Google CEO Sundar Pichai!<!--by default paragraphs are block elements which extends over whole line in page-->
+        </p>
+        <p class="video-author">
+        Marques Browniee    
+        </p>
+        <p class="video-stats">
+        3.4M views &#183; 6 months ago
+        </p>
+        </div>
+      </div>
+      </div>
+
+
+  <div class="video-preview">
+
+      <div class="thumbnail-row">
+        <img class="thumbnail" src="thumbnails/thumbnail-2.webp"> <!--inline block element as it takes only space how much it required like the text as text takes whole line with orange box toblock the line-->
+      </div>
+      <div class="video-info-grid">
+        <div class="channel-picture">
+          <img class="profile-picture" src="channelpictures/channel-2.jpeg">
+        </div>
+        <div class="video-info">
+          <p class="video-title">
+        Try Not To Laugh Challenge #9
+      </p>
+      <p class="video-author">
+        Markiplier  
+      </p>
+      <p class="video-stats">
+        19M views &#183; 4 years ago
+      </p>
+        </div>
+      </div>
+      </div>
+    </div>
+  </body>
+</html>
+

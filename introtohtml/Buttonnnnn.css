@@ -1,0 +1,70 @@
+
+<style>
+  p{
+    font-family: Arial;/* applies to all the paragraph down ther*/
+    margin-top: 0;/* removes the default settings to make it usable*/
+    margin-bottom: 0;
+
+  }
+  .video-title{
+    font-family: 'Times New Roman';/*changes according to need*/
+    font-size: 30px;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    width: 400px; /*to make the width of paragraph small or big*/
+    line-height: 30px;/* to change line spacing of the paragraph*/
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+
+  .video-stats{
+    font-family: arial;
+    font-size: 14px;
+    color: rgb(96,96,96);
+    margin-top: 0px;/*if you used to remove default margin in the top than its good even if you dont write it here*/
+    margin-bottom: 20px;
+  }
+
+  .video-author{
+    font-family: arial;
+    font-size: 14px;
+    color: rgb(96,96,96);
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .video-matter{
+    font-family: Arial;
+    font-size: 14px;
+    color: rgb(96,96,96);
+    width: 300px;
+    line-height: 18px;
+    margin-top: 20px;
+  }
+
+  .video-link{
+    font-size: 14px;
+    margin-top: 30px;
+    background-color: rgb(227,65,64);
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /*text-decoration: underline;*/ /*makes whole paragraph underline but not specific text*/
+    
+  }
+
+  .text-we{
+    margin-left: 10px; /* to add space between two specific words*/
+    cursor: pointer;
+  }
+
+  .text-we:hover {
+    text-decoration: underline;
+    margin-left: 12px;
+  }
+  .text-colo{
+    color:rgb(51, 0, 255);
+  }
+</style>

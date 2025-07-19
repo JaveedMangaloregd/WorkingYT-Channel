@@ -1,0 +1,51 @@
+<!DOCYPE html>   <!--https://supersimple.dev/exercises/youtube/-->
+
+<html>
+   <head>
+    <title>
+      Youtbe.com Cloneee
+    </title>
+<link>  <!--if width changes than even height changes to keep the dimension same and clear with out stretch but image height can be changed by input height: 300 px but it strech out the image making it unprofessional-->
+    <!--use   object-fit: cover;  when used change in height to make it fit to the clear dimension it crops inside but gives clearity -->  
+   <!--object-fit: containe; can be used to shrink down the image and object position can make it move to top bottowm left and right if needed-->
+   <!--you can even put border to the image with the border-width: border-style: border-color: -->
+   <style>
+      .thumbnail {
+        width: 300px;
+        margin-left: 12px;
+        display: block;
+       }
+       .search-bar{
+         font-size: 20px;
+         margin-left: 12px;
+         
+       }
+       .video-title{
+        width: 300px;
+       }
+       .video-author,
+       .video-stats{
+        display: inline-block;
+       }
+    </style>
+  </head>
+  <body>
+    <input class="search-bar" type="text" placeholder="search">  <!--type="checkbox" tp tick mark and placeholder labels the search box so that is shows the lable and disappears when you input text in it-->
+    <img class="thumbnail" src="thumbnails/thumbnail-1.webp"> <!--inline block element as it takes only space how much it required like the text as text takes whole line with orange box toblock the line-->
+    
+    
+    <p class="video-title">
+      Talking Tech and Ai with Google CEO Sundar Pichai!<!--by default paragraphs are block elements which extends over whole line in page-->
+    </p>
+    <p class="video-author">
+      Marques Browniee    
+    </p>
+    <p class="video-stats">
+      3.4M views &#183; 6 months ago
+    </p>
+      <div class="div-example">
+      This is a div
+    </div>
+  </body>
+</html>
+

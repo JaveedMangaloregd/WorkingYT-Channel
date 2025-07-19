@@ -1,0 +1,113 @@
+.Subscribe-button{
+  background-color: rgb(255, 38, 38);
+  color: white;
+  border: none;
+  height: 40px;
+  width: 105px;
+  border-radius: 2px;
+  cursor: pointer;
+  margin-right: 8px;
+  transition: opacity 0.15s;/* makes smoother with the transition between fade in and out */
+  vertical-align: top;/* align in a stretch*/
+}
+
+.Subscribe-button:hover {
+ opacity: 0.8; /*opacity is from 0 to 1like 0.1,0.2,so on*/
+}
+
+.Subscribe-button:active {
+ opacity: 0.4;/*when we click with cursor it fades even more*/
+}
+
+.like-button{
+  background-color: rgb(255, 255, 255);
+  border-color:  rgb(20, 141, 234);
+  border-width: 1px;
+  border: solid;
+  color: rgb(20, 141, 234);
+  height: 40px;
+  width: 105px;
+  border-radius: 2px;
+  cursor: pointer;
+  margin-right: 8px;
+  transition: background-color 0.15s,
+  color 0.15s, border-color 0.15s;
+  vertical-align: top;
+}
+
+.like-button:hover {
+  background-color: white;
+  color: black;
+  border: solid;
+  border-color: black;
+}
+
+.like-button:active {
+  background-color: black;
+  color: white;
+  border: solid;
+  border-color: white;
+  opacity: 0.7;
+}
+
+.Share-button{
+  background-color: rgb(143, 255, 160);
+  border-color:  rgb(113, 255, 106);
+  border-width: 2px;
+  border: solid;
+  color: rgb(255, 255, 255);
+  height: 45px;
+  width: 105px;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-right: 8px;
+  font-weight: bold;
+  font-size: 14px;
+  transition: box-shadow 0.15s;
+  vertical-align: top;
+  }
+
+.Share-button:hover {
+  box-shadow: 5px 5px 5px rgba(0 ,0 ,0 , 0.1);/* 0 0 0 --->[horizontal/sideby shadow of text]
+  [vertical/down]  [blur ] [color of shadow]-->rgba a stands for transperancy between 0 to 1*/
+}
+
+.Share-button:active {
+  background-color: black;
+  color: white;
+  border: solid;
+  border-color: white;
+}
+
+.you-button{
+  background-color: rgb(255, 255, 255);
+  border-color:  rgb(20, 141, 234);
+  border-width: 1px;
+  border: solid;
+  color: rgb(20, 141, 234);
+  padding-left: 5px;/* can stretch size of the box from inside if the text format is huge*/
+  padding-right: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 2px;
+  cursor: pointer;
+  margin-right: 8px;
+  transition: background-color 0.15s,
+  color 0.15s, border-color 0.15s;
+  vertical-align: top;
+}
+
+.you-button:hover {
+  background-color: white;
+  color: black;
+  border: solid;
+  border-color: black;
+}
+
+.you-button:active {
+  background-color: black;
+  color: white;
+  border: solid;
+  border-color: white;
+  opacity: 0.7;
+}
